@@ -41,8 +41,6 @@ input {
 }
 .left_container {
   flex: 1;
-
- 
 }
 .right_container {
 
@@ -91,4 +89,22 @@ img {
     border-radius: 10px;
     background-color: rgb(1, 1, 48);
     color: white;
+}
+
+@media only screen and (max-width:767px)
+{
+    .main_container{
+        width: 95%;
+        padding: 0.5rem;
+    }
+
+    #btn_login {
+        margin: auto;
+        padding: 0.5rem;
+        margin-top: 10px;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(70, 70, 252);
+        color: white;
+      }
 }
