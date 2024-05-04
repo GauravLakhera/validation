@@ -2,15 +2,30 @@ body {
   display: flex;
   justify-content: center; /* Horizontal centering */
   align-items: center; /* Vertical centering */
-  height: 100vh; /* Make the body fill the viewport height */
+  height: 100vh; 
+  font-family: "Raleway", sans-serif;
 }
 input {
-  border: 1px solid gray;
+    border: none;
+  border-bottom: 1px solid gray;
   padding: 20px;
   margin-top: 10px;
-  border-radius: 10px;
+  width: 80%;
+ 
 }
-
+#btn_login {
+  margin: auto;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(70, 70, 252);
+  color: white;
+}
+.error{
+    color: red;
+    font-size: smaller;
+    font-weight: 300;
+}
 .main_container {
   display: flex;
   width: 70%;
@@ -21,19 +36,28 @@ input {
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .left_container {
-  flex: 1;
+  flex: 2;
 }
 .right_container {
   flex: 2;
   display: flex;
   flex-direction: column;
+
+}
+.border-red-700{
+    border-bottom: 1px solid red;
+}
+.border-green-700
+{
+    border-bottom: 1px solid green;
 }
 .Login {
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 .signUp {
-  display: none;
+  display: flex;
+  flex-direction: column;
 }
 .text_toggel {
   text-align: center;
@@ -42,5 +66,22 @@ input {
 img {
   width: 50%;
   height: fit-content;
- 
+}
+.success{
+    position: absolute;
+    padding: 5rem;
+    background-color: rgb(248, 248, 248);
+    color: green;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.signUpToggel{
+    margin: auto;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(1, 1, 48);
+    color: white;
 }
