@@ -15,7 +15,8 @@ input {
 }
 #btn_login {
   margin: auto;
-  padding: 10px;
+  padding: 1.1rem;
+  margin-top: 10px;
   border: none;
   border-radius: 10px;
   background-color: rgb(70, 70, 252);
@@ -27,18 +28,24 @@ input {
     font-weight: 300;
 }
 .main_container {
+
   display: flex;
   width: 70%;
   padding: 1.5rem;
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  justify-content: center;
+  align-items: center;
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.40);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .left_container {
-  flex: 2;
+  flex: 1;
+
+ 
 }
 .right_container {
+
   flex: 2;
   display: flex;
   flex-direction: column;
@@ -64,7 +71,7 @@ input {
   font-size: smaller;
 }
 img {
-  width: 50%;
+  width: 100%;
   height: fit-content;
 }
 .success{
